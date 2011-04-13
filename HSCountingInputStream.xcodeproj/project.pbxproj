@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B7B206F713557E9500C1C6BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7B206F613557E9500C1C6BA /* Foundation.framework */; };
 		B7B206FA13557E9500C1C6BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B7B206F913557E9500C1C6BA /* main.m */; };
+		B7B2070513557ED300C1C6BA /* HSCountingInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = B7B2070413557ED300C1C6BA /* HSCountingInputStream.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,8 +28,9 @@
 		B7B206F213557E9500C1C6BA /* HSCountingInputStream */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HSCountingInputStream; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7B206F613557E9500C1C6BA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B7B206F913557E9500C1C6BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B7B206FC13557E9500C1C6BA /* HSCountingInputStream-Prefix.pch */ = {isa = PBXFileReference; path = "HSCountingInputStream-Prefix.pch"; sourceTree = "<group>"; };
-		B7B206FD13557E9500C1C6BA /* HSCountingInputStream.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = HSCountingInputStream.1; sourceTree = "<group>"; };
+		B7B206FC13557E9500C1C6BA /* HSCountingInputStream-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HSCountingInputStream-Prefix.pch"; sourceTree = "<group>"; };
+		B7B2070313557ED300C1C6BA /* HSCountingInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSCountingInputStream.h; sourceTree = "<group>"; };
+		B7B2070413557ED300C1C6BA /* HSCountingInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSCountingInputStream.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +74,8 @@
 			isa = PBXGroup;
 			children = (
 				B7B206F913557E9500C1C6BA /* main.m */,
-				B7B206FD13557E9500C1C6BA /* HSCountingInputStream.1 */,
+				B7B2070313557ED300C1C6BA /* HSCountingInputStream.h */,
+				B7B2070413557ED300C1C6BA /* HSCountingInputStream.m */,
 				B7B206FB13557E9500C1C6BA /* Supporting Files */,
 			);
 			path = HSCountingInputStream;
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7B206FA13557E9500C1C6BA /* main.m in Sources */,
+				B7B2070513557ED300C1C6BA /* HSCountingInputStream.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
