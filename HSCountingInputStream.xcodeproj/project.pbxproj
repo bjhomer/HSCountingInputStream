@@ -1,0 +1,227 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B7B206F713557E9500C1C6BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7B206F613557E9500C1C6BA /* Foundation.framework */; };
+		B7B206FA13557E9500C1C6BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B7B206F913557E9500C1C6BA /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B7B206F013557E9500C1C6BA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B7B206F213557E9500C1C6BA /* HSCountingInputStream */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HSCountingInputStream; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7B206F613557E9500C1C6BA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B7B206F913557E9500C1C6BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B7B206FC13557E9500C1C6BA /* HSCountingInputStream-Prefix.pch */ = {isa = PBXFileReference; path = "HSCountingInputStream-Prefix.pch"; sourceTree = "<group>"; };
+		B7B206FD13557E9500C1C6BA /* HSCountingInputStream.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = HSCountingInputStream.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B7B206EF13557E9500C1C6BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7B206F713557E9500C1C6BA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B7B206E713557E9500C1C6BA = {
+			isa = PBXGroup;
+			children = (
+				B7B206F813557E9500C1C6BA /* HSCountingInputStream */,
+				B7B206F513557E9500C1C6BA /* Frameworks */,
+				B7B206F313557E9500C1C6BA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B7B206F313557E9500C1C6BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B7B206F213557E9500C1C6BA /* HSCountingInputStream */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B7B206F513557E9500C1C6BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B7B206F613557E9500C1C6BA /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B7B206F813557E9500C1C6BA /* HSCountingInputStream */ = {
+			isa = PBXGroup;
+			children = (
+				B7B206F913557E9500C1C6BA /* main.m */,
+				B7B206FD13557E9500C1C6BA /* HSCountingInputStream.1 */,
+				B7B206FB13557E9500C1C6BA /* Supporting Files */,
+			);
+			path = HSCountingInputStream;
+			sourceTree = "<group>";
+		};
+		B7B206FB13557E9500C1C6BA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B7B206FC13557E9500C1C6BA /* HSCountingInputStream-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B7B206F113557E9500C1C6BA /* HSCountingInputStream */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7B2070013557E9500C1C6BA /* Build configuration list for PBXNativeTarget "HSCountingInputStream" */;
+			buildPhases = (
+				B7B206EE13557E9500C1C6BA /* Sources */,
+				B7B206EF13557E9500C1C6BA /* Frameworks */,
+				B7B206F013557E9500C1C6BA /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HSCountingInputStream;
+			productName = HSCountingInputStream;
+			productReference = B7B206F213557E9500C1C6BA /* HSCountingInputStream */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B7B206E913557E9500C1C6BA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "BJ Homer";
+			};
+			buildConfigurationList = B7B206EC13557E9500C1C6BA /* Build configuration list for PBXProject "HSCountingInputStream" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B7B206E713557E9500C1C6BA;
+			productRefGroup = B7B206F313557E9500C1C6BA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B7B206F113557E9500C1C6BA /* HSCountingInputStream */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B7B206EE13557E9500C1C6BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7B206FA13557E9500C1C6BA /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B7B206FE13557E9500C1C6BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B7B206FF13557E9500C1C6BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B7B2070113557E9500C1C6BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HSCountingInputStream/HSCountingInputStream-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B7B2070213557E9500C1C6BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HSCountingInputStream/HSCountingInputStream-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B7B206EC13557E9500C1C6BA /* Build configuration list for PBXProject "HSCountingInputStream" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7B206FE13557E9500C1C6BA /* Debug */,
+				B7B206FF13557E9500C1C6BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7B2070013557E9500C1C6BA /* Build configuration list for PBXNativeTarget "HSCountingInputStream" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7B2070113557E9500C1C6BA /* Debug */,
+				B7B2070213557E9500C1C6BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B7B206E913557E9500C1C6BA /* Project object */;
+}
