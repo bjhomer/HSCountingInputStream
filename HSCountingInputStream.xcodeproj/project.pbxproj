@@ -10,6 +10,7 @@
 		B7B206F713557E9500C1C6BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7B206F613557E9500C1C6BA /* Foundation.framework */; };
 		B7B206FA13557E9500C1C6BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B7B206F913557E9500C1C6BA /* main.m */; };
 		B7B2070513557ED300C1C6BA /* HSCountingInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = B7B2070413557ED300C1C6BA /* HSCountingInputStream.m */; };
+		B7B207091358024700C1C6BA /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7B207081358024700C1C6BA /* CoreServices.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,7 @@
 		B7B206FC13557E9500C1C6BA /* HSCountingInputStream-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HSCountingInputStream-Prefix.pch"; sourceTree = "<group>"; };
 		B7B2070313557ED300C1C6BA /* HSCountingInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSCountingInputStream.h; sourceTree = "<group>"; };
 		B7B2070413557ED300C1C6BA /* HSCountingInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSCountingInputStream.m; sourceTree = "<group>"; };
+		B7B207081358024700C1C6BA /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7B207091358024700C1C6BA /* CoreServices.framework in Frameworks */,
 				B7B206F713557E9500C1C6BA /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -65,6 +68,7 @@
 		B7B206F513557E9500C1C6BA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B7B207081358024700C1C6BA /* CoreServices.framework */,
 				B7B206F613557E9500C1C6BA /* Foundation.framework */,
 			);
 			name = Frameworks;
