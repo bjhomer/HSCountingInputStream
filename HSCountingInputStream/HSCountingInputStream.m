@@ -124,7 +124,7 @@
 	if (inCallback != NULL) {
 		requestedEvents = inFlags;
 		copiedCallback = inCallback;
-		memcpy(&copiedContext, &inContext, sizeof(CFStreamClientContext));
+		memcpy(&copiedContext, inContext, sizeof(CFStreamClientContext));
 		
 		if (copiedContext.info && copiedContext.retain) {
 			copiedContext.retain(copiedContext.info);
