@@ -8,8 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import "HSCountingInputStream.h"
+#import "HSRandomDataInputStream.h"
 
 void downloadFile();
+void produceRandomData();
 
 int main (int argc, const char * argv[])
 {
@@ -17,9 +19,38 @@ int main (int argc, const char * argv[])
 	NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
 	
 	downloadFile();
+	produceRandomData();
 
 	[pool drain];
     return 0;
+}
+
+void clientCallback(CFReadStreamRef stream, CFStreamEventType type, void *clientCallBackInfo) {
+	UInt8 buffer[32];
+	CFReadStreamRead(stream, buffer, 32);
+	
+	NSData *data = [NSData dataWithBytes:buffer length:32];
+	NSLog(@"Here are 32 random bytes: %@", data);
+	
+    CFReadStreamClose(stream);
+}
+
+void produceRandomData() {
+	HSRandomDataInputStream *randomStream = [[HSRandomDataInputStream alloc] init];
+	CFReadStreamRef cfRandomStream = (CFReadStreamRef)randomStream;
+	
+	CFReadStreamScheduleWithRunLoop(cfRandomStream, [[NSRunLoop currentRunLoop] getCFRunLoop], kCFRunLoopCommonModes);
+	
+	CFStreamClientContext context = {0};
+	CFReadStreamSetClient(cfRandomStream, kCFStreamEventHasBytesAvailable, &clientCallback, &context);
+	
+	[[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:1]];
+	
+	
+	
+
+	
+	[randomStream release];
 }
 
 void downloadFile() {
