@@ -61,7 +61,9 @@
 	if (aDelegate == nil) {
 		delegate = self;
 	}
-	delegate = aDelegate;
+	else {
+		delegate = aDelegate;
+	}
 }
 
 - (void)scheduleInRunLoop:(NSRunLoop *)aRunLoop forMode:(NSString *)mode {
