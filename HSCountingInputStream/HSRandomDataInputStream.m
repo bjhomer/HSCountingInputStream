@@ -52,6 +52,9 @@
 
 - (void)setDelegate:(id<NSStreamDelegate>)aDelegate {
     delegate = aDelegate;
+    if (delegate == nil) {
+    	delegate = self;
+    }
 }
 
 - (void)scheduleInRunLoop:(NSRunLoop *)aRunLoop forMode:(NSString *)mode {
