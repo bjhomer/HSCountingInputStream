@@ -32,6 +32,8 @@
         // Initialization code here.
 		parentStream = [stream retain];
 		[parentStream setDelegate:self];
+        
+        [self setDelegate:self];
     }
     
     return self;

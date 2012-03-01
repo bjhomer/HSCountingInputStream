@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 
-@interface HSRandomDataInputStream : NSInputStream {
+@interface HSRandomDataInputStream : NSInputStream <NSStreamDelegate> {
 @private
     
 }

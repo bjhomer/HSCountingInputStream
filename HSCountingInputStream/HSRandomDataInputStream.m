@@ -26,6 +26,8 @@
     if (self) {
         // Initialization code here.
         streamStatus = NSStreamStatusNotOpen;
+        
+        [self setDelegate:self];
     }
     
     return self;
